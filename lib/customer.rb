@@ -19,5 +19,5 @@ class Customer
 
   def meals
     Meal.all.collect { |meal| meal if meal.customer = self }
-  def
+  end
 end

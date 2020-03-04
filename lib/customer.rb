@@ -20,4 +20,8 @@ class Customer
   def meals
     Meal.all.select { |meal| meal.customer == self }
   end
+
+  def waiters
+    self.meals.each{ |meal| meal.waiter }.uniq
+  end
 end

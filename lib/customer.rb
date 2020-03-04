@@ -22,6 +22,6 @@ class Customer
   end
 
   def waiters
-    self.meals.each{ |meal| meal.waiter }.uniq
+    self.meals.each{ |meal| meal.waiter }
   end
 end
